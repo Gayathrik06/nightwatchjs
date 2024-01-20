@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="3">
+
+  <testsuite name="apiTesting"
+    errors="1" failures="0" hostname="" id="" package="apiTesting" skipped="0"
+    tests="3" time="69.55" timestamp="">
+  
+    <testcase name="Test Case 1" classname="apiTesting" time="1.835" assertions="0">
+    </testcase>
+  
+    <testcase name="Test Case 2" classname="apiTesting" time="30.78" assertions="0">
+    <error message="Navigation timeout of 30000 ms exceeded" type="error"><![CDATA[
+    TimeoutError: Navigation timeout of 30000 ms exceeded
+    at new Deferred (D:\Gayathri\Nestjs\nest_api\night\node_modules\puppeteer-core\lib\cjs\puppeteer\util\Deferred.js:26:34)
+    at Deferred.create (D:\Gayathri\Nestjs\nest_api\night\node_modules\puppeteer-core\lib\cjs\puppeteer\util\Deferred.js:68:16)
+    at new LifecycleWatcher (D:\Gayathri\Nestjs\nest_api\night\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\LifecycleWatcher.js:65:60)
+    at CdpFrame.goto (D:\Gayathri\Nestjs\nest_api\night\node_modules\puppeteer-core\lib\cjs\puppeteer\cdp\Frame.js:135:29)
+    at CdpFrame.&lt;anonymous&gt; (D:\Gayathri\Nestjs\nest_api\night\node_modules\puppeteer-core\lib\cjs\puppeteer\util\decorators.js:98:27)
+    at CdpPage.goto (D:\Gayathri\Nestjs\nest_api\night\node_modules\puppeteer-core\lib\cjs\puppeteer\api\Page.js:592:43)
+    at Object.Test Case 2 (D:\Gayathri\Nestjs\nest_api\night\test\apiTesting.js:48:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    ]]></error>
+    
+    </testcase>
+  
+    <testcase name="Test Case 3" classname="apiTesting" time="2.154" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+       TimeoutError
+   Navigation timeout of 30000 ms exceeded
+
+    Error location:
+    D:\Gayathri\Nestjs\nest_api\night\test\apiTesting.js:48
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     46 | 
+     47 |     // Navigate to a URL
+     48 |     await page.goto(url); 
+     49 |     
+     50 | 
+    ––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
